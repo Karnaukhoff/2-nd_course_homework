@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+  }
+
+.top{
+    height: 1024px;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header{
+    padding-top: 217px;
+    padding-left: 120px;
+    &__heading{
+        color:#FFFFFF;
+        width: 788px;
+        height: 125px;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+    }
+    &__text{
+        padding-top: 48px;
+        color: #8b8b8b;
+        width: 481px;
+        height: 64px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        &_span{
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+    }
+    &__button{
+        margin-top: 90px;
+        background: #9C0332;
+        border: none;
+        border-radius: 30px;
+        width: 234px;
+        height: 48px;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+.footer{
+    background-image: url(img/Footer__backgroud.jpg);
+    height: 556px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__boxes{
+        padding-top: 128px;
+        display: flex;
+        justify-content: space-around;
+        gap: 32px;
+    }
+    &__container{
+        width: 379px;
+        height: 300px;
+        border-radius: 16px;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.05);
+        }
+        &_1{
+            background-image: url(img/footer__game_1.jpg);
+        }
+        &_2{
+            background-image: url(img/footer__game_2.jpg);
+        }
+        &_3{
+            background-image: url(img/footer__game_3.jpg);
+        }
+        &_heading{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin-left: 32px;
+            margin-top: 236px;
+        }
+    }
+}
