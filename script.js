@@ -6,7 +6,7 @@ let year = 2007;
 alert('First iPhone was released in ' + year + ' year');
 //Ex.3
 let founder = "Brendan Eich";
-alert('JavaScript was founded by ' + founder);
+alert("JavaScript was founded by " + founder);
 //Ex.4
 let a1 = 10;
 let a2 = 2;
