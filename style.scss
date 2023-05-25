@@ -66,7 +66,7 @@ body {
     }
 }
 
-.footer{
+.section{
     background-image: url(img/Footer__backgroud.jpg);
     height: 556px;
     background-repeat: no-repeat;
@@ -103,6 +103,55 @@ body {
             margin-left: 32px;
             margin-top: 236px;
         }
+    }
+}
+.season{
+    display: flex;
+    gap: 130px;
+    background: #000915;
+    height: 800px;
+    &__heading{
+        padding-top: 282px;
+        padding-left: 120px;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+    }
+    &__text{
+        width: 714px;
+        height: 64px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding-top: 32px;
+        padding-left: 120px;
+    }
+    &__button{
+        margin-left: 120px;
+        margin-top: 64px;
+        background: #9C0332;
+        border: none;
+        border-radius: 30px;
+        width: 234px;
+        height: 48px;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    &__img{
+        margin-top: 238px;
+        width: 485px;
+        height: 333px;
     }
 }
 

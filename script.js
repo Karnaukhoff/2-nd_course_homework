@@ -1,4 +1,6 @@
-// Ex. 1
+//Homework 2
+
+/*// Ex. 1
 let a0 = 10;
 alert(a0);
 //Ex.2
@@ -44,4 +46,106 @@ let info = prompt("Какую информацию хотите узнать о 
 alert(user[info]);
 //Ex.10
 let UserName = prompt("What is your name ?");
-alert("Привет, " + UserName + "!");
+alert("Привет, " + UserName + "!");*/
+
+//Homework 3
+
+//Ex.1
+let password = 'пароль';
+let enter_psw = prompt("Введите пароль");
+if (password === enter_psw){
+	alert("Пароль введен верно")
+} else {
+	alert("Пароль введен неправильно")
+}
+//Ex.2
+let c = prompt("Введите число");
+if (c > 0 && c < 10){
+	alert("Верно");
+} else{
+	alert("Неверно");
+}
+//Ex.3
+let d = prompt("Введите число");
+let e = prompt("И еще одно");
+if (d > 100 || e > 100){
+	alert("Верно");
+} else{
+	alert("Неверно");
+}
+//Ex.4
+let a = +'2';
+let b = +'3';
+
+alert(a + b);
+//Ex.5
+let month = Number(prompt("Введите месяц"));
+switch (month){
+	case 12:
+		alert("Зима");
+		break;
+	case 1:
+		alert("Зима");
+		break;
+	case 2:
+		alert("Зима");
+		break;
+	case 3:
+		alert("Весна");
+		break;
+	case 4:
+		alert("Весна");
+		break;
+	case 5:
+		alert("Весна");
+		break;
+	case 6:
+		alert("Лето");
+		break;
+	case 7:
+		alert("Лето");
+		break;
+	case 8:
+		alert("Лето");
+		break;
+	case 9:
+		alert("Осень");
+		break;
+	case 10:
+		alert("Осень");
+		break;
+	case 11:
+		alert("Осень");	
+		break;
+	default: alert("Что-то не то(");
+		break;
+}
+//Ex.7
+let num = prompt("Пожалуйста, введите любое число");
+let n = +num;
+
+if (n == num){
+	if (n % 2 == 0){
+		alert("Число четное");
+	} else{
+		alert("Число нечетное");
+	}
+} else{
+	alert("Это не число!")
+}
+//Ex.8
+let clientOS
+let year = 2020;
+if (clientOS == 0){
+	if (year < 2015){
+		alert("Установите облегченную версию приложения для iOS по ссылке");
+	}else {
+		alert("Установите версию приложения для iOS по ссылке");
+	}
+} else {
+	if (year < 2015){
+		alert("Установите облегченную версию приложения для Android по ссылке");
+	}else {
+		alert("Установите версию приложения для Android по ссылке");
+	}
+}
