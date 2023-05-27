@@ -1,6 +1,7 @@
+/*
 //Homework 2
 
-/*// Ex. 1
+// Ex. 1
 let a0 = 10;
 alert(a0);
 //Ex.2
@@ -46,7 +47,7 @@ let info = prompt("Какую информацию хотите узнать о 
 alert(user[info]);
 //Ex.10
 let UserName = prompt("What is your name ?");
-alert("Привет, " + UserName + "!");*/
+alert("Привет, " + UserName + "!");
 
 //Homework 3
 
@@ -148,4 +149,47 @@ if (clientOS == 0){
 	}else {
 		alert("Установите версию приложения для Android по ссылке");
 	}
+}
+*/
+
+//Homework 4
+
+//Ex.1
+let i1 = 1;
+for(i1; i1 <= 2; i1++){
+	console.log("Привет!");
+};
+//Ex.2
+let i2 = 1;
+for(i2; i2 <= 5; i2++){
+	console.log(i2);
+};
+//Ex.3
+let i3 = 7;
+for(i3; i3 <= 22; i3++){
+	console.log(i3);
+};
+//Ex.4
+const i4 = {
+	"Коля": 200,
+	"Вася": 300,
+	"Петя": 400,
+}
+for(let item in i4){
+	console.log(item + " - зарплата " + i4[item] + " долларов.");
+}
+//Ex.5
+let n = 1000;
+let num = 0;
+let count = 0;
+while(n > 50){
+	count++;
+	n /= 2;
+}
+console.log(count);
+//Ex.6
+let friday = 1;
+while(friday <= 31){
+	console.log("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+	friday += 7;
 }
