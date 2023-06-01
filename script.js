@@ -150,7 +150,7 @@ if (clientOS == 0){
 		alert("Установите версию приложения для Android по ссылке");
 	}
 }
-*/
+
 
 //Homework 4
 
@@ -193,3 +193,104 @@ while(friday <= 31){
 	console.log("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
 	friday += 7;
 }
+*/
+
+//Homework 5
+
+//Ex.1
+let a1 = Number(prompt("Введите первое число"));
+let a2 = Number(prompt("Введите второе число"));
+
+function min(a, b){
+	if (a > b) {
+		return b;
+	} else {
+		return a;
+	}
+}
+
+console.log(min(a1, a2));
+
+//Ex.2
+let a21 = Number(prompt("2) Введите рандомное число"));
+
+function whatsNumber(a21) {
+	if (a21 % 2 === 0) {
+		console.log("Число четное");
+	} else {
+		console.log("Число нечетное");
+	}
+}
+
+whatsNumber(a21);
+
+//Ex.3
+let a31 = Number(prompt("3) Введите рандомное число"));
+
+function squareNumber_1(a31) {
+	console.log(a31*a31);
+}
+function squareNumber_2(a31) {
+	return a31*a31;
+}
+
+squareNumber_1(a31);
+console.log(squareNumber_2(a31));
+
+//Ex.4
+let a41 = Number(prompt("How old are you ?"));
+
+function age(a41) {
+	if (a41 < 0) {
+		console.log("Вы ввели неправильное значение");
+	} else if (a41 >= 0 && a41 <=12) {
+		console.log("Привет, друг!");
+	} else {
+		console.log("Добро пожаловать!");
+	}
+}
+
+age(a41);
+
+//Ex.5
+let a51 = Number(prompt("5) Введите первое число"));
+let a52 = Number(prompt("5) Введите второе число"));
+
+function isItNumbers(a51, a52) {
+	if (isNaN(a51) || isNaN(a52)) {
+		console.log("Одно или оба значения не являются числом");
+	} else {
+		console.log(a51*a52);
+	}
+}
+
+isItNumbers(a51, a52);
+
+//Ex.6
+let a61 = Number(prompt("6) Введите рандомное число"));
+
+function cubeNumber(a61) {
+	if (isNaN(a61)) {
+		console.log("Переданный параметр не является числом");
+	} else {
+	console.log(`${a61} в кубе равняется ${a61*a61*a61}`);
+	}
+}
+
+cubeNumber(a61);
+
+//Ex.7
+let radius = 5;
+
+function getArea(radius) {
+	return 3,14*radius*radius;
+}
+function getPerimeter(radius) {
+	return 2*3,14*radius;
+}
+
+let circle1 = getArea(radius);
+let circle2 = getPerimeter(radius);
+
+console.log(`Площадь круга равна ${circle1}`);
+console.log(`Периметр круга равна ${circle2}`);
