@@ -294,3 +294,20 @@ let circle2 = getPerimeter(radius);
 
 console.log(`Площадь круга равна ${circle1}`);
 console.log(`Периметр круга равна ${circle2}`);
+
+//Ex.8
+let a81 = Number(prompt("8) Введите рандомное число"));
+
+function month(a81) {
+	if (a81 == 12 || a81 == 1 || a81 == 2) {
+		console.log("Зима");
+	} else if (a81 >= 3 && a81 <= 5) {
+		console.log("Весна");
+	} else if (a81 >= 6 && a81 <= 8) {
+		console.log("Лето");
+	} else if (a81 >= 9 && a81 <= 11) {
+		console.log("Осень");
+	}
+}
+
+month(a81);
