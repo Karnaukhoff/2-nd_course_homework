@@ -110,7 +110,13 @@ body {
   display: flex;
   gap: 130px;
   background: #000915;
-  height: 800px;
+}
+.season__2 {
+  gap: 60px;
+  padding-bottom: 239px;
+}
+.season__2_mobile {
+  display: none;
 }
 .season__heading {
   padding-top: 282px;
@@ -154,6 +160,77 @@ body {
   margin-top: 238px;
   width: 485px;
   height: 333px;
+}
+.season__img_2 {
+  margin-left: 120px;
+}
+
+.mystery {
+  padding-top: 256px;
+  background-image: url(img/unsplash_iO0I6-mhDEY.png);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.mystery__heading {
+  width: 392px;
+  height: 59px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.mystery__text {
+  padding-top: 32px;
+  width: 1200px;
+  height: 64px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.mystery__button {
+  margin-top: 64px;
+  background: #9C0332;
+  border: none;
+  border-radius: 30px;
+  width: 234px;
+  height: 48px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.mystery__button:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-image: url(img/Rectangle\ 9.png);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__text {
+  width: 136px;
+  height: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
 }
 
 @media (max-width: 500px) {
@@ -199,10 +276,15 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    height: 1000px;
+  }
+  .season__2 {
+    display: none;
+  }
+  .season__2_mobile {
+    display: flex;
   }
   .season__heading {
-    padding-top: 178px;
+    padding-top: 64px;
     padding-left: 0;
     text-align: center;
     font-size: 32px;
@@ -218,9 +300,26 @@ body {
   .season__img {
     width: 344px;
     height: 236px;
+    margin-top: 64px;
+  }
+  .season__img_2 {
+    margin-left: 0;
   }
   .season__button {
     margin-left: 58px;
     margin-top: 48px;
+  }
+  .mystery__heading {
+    width: 261px;
+    height: 39px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .mystery__text {
+    width: 343px;
+    height: 110px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
   }
 }/*# sourceMappingURL=style.css.map */

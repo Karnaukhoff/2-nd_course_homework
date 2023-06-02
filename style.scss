@@ -109,7 +109,14 @@ body {
     display: flex;
     gap: 130px;
     background: #000915;
-    height: 800px;
+    &__2{
+        gap: 60px;
+        padding-bottom: 239px;
+        &_mobile{
+            display: none;
+        }
+    }
+    //Elements    
     &__heading{
         padding-top: 282px;
         padding-left: 120px;
@@ -152,6 +159,75 @@ body {
         margin-top: 238px;
         width: 485px;
         height: 333px;
+        &_2{
+            margin-left: 120px;
+        }
+    }
+}
+.mystery{
+    padding-top: 256px;
+    background-image: url(img/unsplash_iO0I6-mhDEY.png);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__heading{
+        width: 392px;
+        height: 59px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+    }
+    &__text{
+        padding-top: 32px;
+        width: 1200px;
+        height: 64px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+    &__button{
+        margin-top: 64px;
+        background: #9C0332;
+        border: none;
+        border-radius: 30px;
+        width: 234px;
+        height: 48px;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+.footer{
+    background-image: url(img/Rectangle\ 9.png);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__text{
+        width: 136px;
+        height: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
     }
 }
 
