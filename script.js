@@ -1,3 +1,4 @@
+/*
 //Homework 6
 //Ex.1
 const numbers1 = [1, 5, 4, 10, 0, 3];
@@ -115,3 +116,119 @@ function filterPositive(array) {
   
   filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
   filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
+  */
+
+  //Homework 7
+//Ex.1
+  let a1 = 'js';
+
+a1 = a1.toUpperCase();
+console.log(a1);
+
+//Ex.2
+function searchStart(array, searching) {
+	resultArray = [];
+	for (let i = 0; i < array.length; i++) {
+		if (array[i].toUpperCase().includes(searching.toUpperCase())) {
+			resultArray.push(array[i]);
+		}
+	}
+	console.log(resultArray);
+}
+
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
+searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
+searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
+
+//Ex.3
+let a3 = 32.58884;
+
+console.log(Math.ceil(a3));
+console.log(Math.floor(a3));
+console.log(Math.round(a3));
+
+//Ex.4
+console.log(Math.min(52, 53, 49, 77, 21, 32));
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+//Ex.5
+console.log(Math.round(Math.random() * 10));
+
+//Ex.6
+function getRandomArrNumbers(a) {
+	let resultArray = [];
+	let count = Math.floor(a/2);
+
+	for (let i = 0; i < count; i++) {
+		resultArray.push(Math.round(Math.random() * a));
+	}
+
+	console.log(resultArray);
+}
+
+getRandomArrNumbers(7); // [6, 2, 7] - массив заполнен случайными числами
+// от 0 до 7, длина массива 7 / 2 = 3.5, округляем до ближайшего меньшего
+// числа, получаем 3
+getRandomArrNumbers(12); // [9, 11, 10, 9, 3, 0] - массив заполнен случайными числами
+// от 0 до 12, длина массива 12 / 2 = 6
+
+//Ex.7
+function rangeRandom(a, b) {
+	console.log(Number(a) + Number(Math.round(Math.random()*(b-a))));
+}
+
+let a71 = prompt('Enter first number');
+let a72 = prompt('Enter second number');
+rangeRandom(a71, a72);
+
+//Ex.8
+let date = new Date();
+let day8 = date.getDate();
+let month8 = date.getMonth() + 1;
+let year8 = date.getYear() + 1900;
+
+console.log(`${day8}/${month8}/${year8}`);
+
+//Ex.9
+let currentDate = new Date();
+currentDate.setDate(73);
+
+let day9 = currentDate.getDate();
+let month9 = currentDate.getMonth() + 1;
+let year9 = currentDate.getYear() + 1900;
+
+console.log(`${day9}/${month9}/${year9}`);
+
+//Ex.10
+function fullDate() {
+	let date10 = new Date();
+
+	let day10 = date10.getDate();
+	let month10 = date10.getMonth() + 1;
+	let year10 = date10.getYear() + 1900;
+	if (date10.getHours() < 10) {hours10 = '0' + date10.getHours()}
+	else {hours10 = date10.getHours()}
+	if (date10.getMinutes() < 10) {minutes10 = '0' + date10.getMinutes()}
+	else {minutes10 = date10.getMinutes()}
+	if (date10.getSeconds() < 10) {seconds10 = '0' + date10.getSeconds()}
+	else {seconds10 = date10.getSeconds()}
+
+	console.log(`Дата: ${day10}/${Month(month10)}/${year10}`);
+	console.log(`Время: ${hours10}:${minutes10}:${seconds10}`);
+}
+function Month(num10) {
+	if (num10 === 1) {return "Января"}
+	else if (num10 === 2) {return "Февраля"}
+	else if (num10 === 3) {return "Марта"}
+	else if (num10 === 4) {return "Апреля"}
+	else if (num10 === 5) {return "Мая"}
+	else if (num10 === 6) {return "Июня"}
+	else if (num10 === 7) {return "Июля"}
+	else if (num10 === 8) {return "Августа"}
+	else if (num10 === 9) {return "Сентября"}
+	else if (num10 === 10) {return "Октября"}
+	else if (num10 === 11) {return "Ноября"}
+	else if (num10 === 12) {return "Декабря"}
+}
+
+fullDate();
