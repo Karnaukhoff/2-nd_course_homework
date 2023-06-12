@@ -116,7 +116,7 @@ function filterPositive(array) {
   
   filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
   filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
-  */
+  
 
   //Homework 7
 //Ex.1
@@ -232,3 +232,96 @@ function Month(num10) {
 }
 
 fullDate();
+*/
+
+//Homework 8
+
+//Ex.1
+const people = [
+	{ name: 'Глеб', age: 29 },
+	{ name: 'Анна', age: 17 },
+	{ name: 'Олег', age: 7 },
+	{ name: 'Оксана', age: 47 }
+ ];
+ 
+ // Допишите колбэк для sort, изучите, как работает колбэк, в документации
+ console.log(people.sort(function (a, b) {
+	if (a.age > b.age) {
+	  return 1;
+	}
+	if (a.age < b.age) {
+	  return -1;
+	}
+	// a должно быть равным b
+	return 0;
+  }));
+ // код выше должен вывеcти =>
+ // [
+ //  { name: 'Олег', age: 7 },
+ //  { name: 'Анна', age: 17 },
+ //  { name: 'Глеб', age: 29 },
+ //  { name: 'Оксана', age: 47 }
+ // ]
+
+ //Ex.2
+ function isPositive(item) {
+		if (item > 0) {return item;}
+	}
+
+	function isMale(person) {
+		if (person.gender === 'male') {return person;}
+	}
+
+	function filter(a, b) {
+	return a.filter(b);
+	}
+	
+	console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+	
+	const people2 = [
+	   {name: 'Глеб', gender: 'male'},
+	   {name: 'Анна', gender: 'female'},
+	   {name: 'Олег', gender: 'male'},
+	   {name: 'Оксана', gender: 'female'}
+	];
+	
+	console.log(filter(people2, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+
+//Ex.3
+function showTime() {
+	let date = new Date();
+	console.log(date);
+}
+
+// повторить с интервалом 3 секунды
+let timerId = setInterval(() => showTime(), 1000 * 3);
+
+// остановить вывод через 30 секунд
+setTimeout(() => { clearInterval(timerId); console.log('30 секунд прошло'); }, 1000 * 30);
+
+//Ex.4
+function delayForSecond(callback) {
+	setTimeout(() => { 
+		if(callback) { 	callback(); }
+
+    }, 1000)
+  	//callback();
+}
+
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+})
+
+//Ex.5
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) { cb(); }
+    }, 1000)
+}
+
+function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(() => sayHi('Глеб'));
